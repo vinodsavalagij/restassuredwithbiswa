@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4095" started-at="2019-10-26T15:12:35Z" finished-at="2019-10-26T15:12:39Z">
+  <suite name="Suite" duration-ms="21" started-at="2019-11-14T15:39:45Z" finished-at="2019-11-14T15:39:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4095" started-at="2019-10-26T15:12:35Z" finished-at="2019-10-26T15:12:39Z">
-      <class name="restAssured.RestAsssuredAutomationLearning.ValidateUpdate">
-        <test-method status="PASS" signature="validateUpdate()[pri:0, instance:restAssured.RestAsssuredAutomationLearning.ValidateUpdate@4ed9f0]" name="validateUpdate" duration-ms="4045" started-at="2019-10-26T20:42:35Z" finished-at="2019-10-26T20:42:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUpdate -->
-      </class> <!-- restAssured.RestAsssuredAutomationLearning.ValidateUpdate -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    <test name="Test" duration-ms="21" started-at="2019-11-14T15:39:45Z" finished-at="2019-11-14T15:39:45Z">
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -1,6 +1,9 @@
 package restAssured.RestAsssuredAutomationLearning;
 
 import static io.restassured.RestAssured.*; import static io.restassured.matcher.RestAssuredMatchers.*;
+
+import static org.hamcrest.MatcherAssert.assertThat; 
+import static org.hamcrest.Matchers.*;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
@@ -10,42 +13,6 @@ import io.restassured.response.Response;
 
 public class RestAssured {
 
-/*	@Test
-	public void pathParameters()
-	{
-	        
-	  given().
-	    pathParam("country","us").
-	    pathParam("zipcode","90210").
-	  when().
-	    get("http://api.zippopotam.us/{country}/{zipcode}");
-	}
-	
-	
-	@Test
-	public void assertStatusCode()
-	{
-		
-		given().
-		when().
-		get("http://api.zippopotam.us").
-		then().
-		assertThat().statusCode(200);
-		
-	}
-	
-	@Test
-	public void getResponseBody()
-	{
-		Response res = (Response) given().
-		when().
-		get("http://api.zippopotam.us").then().extract();
-		
-		
-		System.out.println(( res.asString()));
-	}
-	*/
-	
 	
 	@Test
 	public void validateResponse()
@@ -57,7 +24,7 @@ public class RestAssured {
 		    pathParam("country","us").
 		    pathParam("zipcode","90210").
 		  when().
-		    get("http://api.zippopotam.us/{country}/{zipcode}").then().extract();
+		    get("http://api.zippopotam.us/{country}/{zipcode}").then().assertThat().body("places.state", equalTo("sdf")). extract();
 		  
 		 String res = response.asString();
 		 
